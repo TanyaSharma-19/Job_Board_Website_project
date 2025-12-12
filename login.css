@@ -1,0 +1,108 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #D7EBFF;
+    min-height: 100vh;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("blue-stationery-table.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+header {
+    background: #007bff;
+    padding: 18px 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.logo {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+.container {
+    width: 360px;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin: 40px auto;
+}
+@media (min-width: 900px) {
+    .container { margin-top: 60px; }
+}
+h2 {
+    text-align: center;
+    margin: 0 0 12px;
+    color: #007bff;
+    font-size: 24px;
+    font-weight: 600;
+}
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #333;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #d0d7dd;
+    font-size: 14px;
+}
+.toggle-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #333;
+}
+button#submitBtn {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+button#submitBtn:hover {
+    background: #0068d6;
+}
+.switch {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 14px;
+}
+.switch span {
+    color: #007bff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hidden { display: none; }
+@media (max-width: 480px) {
+    .container { width: calc(100% - 40px); margin: 20px; padding: 20px; }
+    .logo { padding: 0 6px; font-size: 20px; }
+}
